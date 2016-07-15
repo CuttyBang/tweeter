@@ -1,0 +1,19 @@
+<template name="follow">
+  {{#if currentUser}}
+    <form class="form-inline inner">
+      <input type="text" class="form-control" id="searchUser" placeholder="Search users..">
+      <button type="submit" class="btn btn-info">Search</button>
+    </form>
+    <div class="reccomended-users">
+      <h5>Suggested follows: </h5>
+      {{#each reccomendedUsers}}
+        <button id="followRec" type="button" ckass="btn btn-info">Follow @{{this.username}}</button>
+      {{/each}}
+    </div>
+    {{#if foundUser}}
+      <div class="found-user">
+        <button class="btn btn-default" type="button" id="follow">Follow @{{foundUser}}</button>
+      </div>
+    {{/if}}
+  {{/if}}
+</template>

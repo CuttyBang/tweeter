@@ -1,0 +1,60 @@
+/* CSS declarations go here */
+body {
+  background-color: #6dbcd9;
+  background-image: linear-gradient(to bottom, #6dbcd9, #e6e7e8 100%);
+  background-attachment: fixed;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 4em;
+}
+
+.tweetbox-container {
+  margin: 45px;
+}
+
+.tweetbox, .userBox {
+  background-color: #e6e7e8;
+}
+
+.tweetbox .btnGroup {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.tweetbox .charCount {
+  margin-right: 10px;
+  color: #999;
+}
+
+.tweetbox .errCharCount {
+  margin-right: 10px;
+  color: #cb1c1c;
+}
+
+.user-container {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.user-container h4 {
+  color: #999;
+}
+
+.user-container .fullbutton {
+  width: 100%;
+}
+
+.user-container .input-sm {
+  margin-bottom: 5px;
+}
+
+.user-container .login {
+  margin-bottom: 15px;
+}
+
+.inner {
+  margin: 5 15;
+}

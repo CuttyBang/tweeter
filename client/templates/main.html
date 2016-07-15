@@ -1,0 +1,69 @@
+<head>
+  <title>Tweeter</title>
+</head>
+
+<body>
+  <h1 class="text-center heading ">Tweeter</h1>
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-md-push-1 col-sm-push-1">
+      {{> userManagement}}
+    </div>
+    <div class="col-md-7 col-sm-7 col-md-push-1 col-sm-push-1">
+      {{> tweetBox}}
+    </div>
+    <div class="col-md-3 col-sm-3 col-md-push-1 col-sm-push-1">
+      {{> follow}}
+    </div>
+  </div>
+
+</body>
+
+<template name="tweetBox">
+  <div class="tweetbox-container">
+    <div class="panel panel-default tweetbox col-md-8">
+      <div class="panel-body">
+        <form class="tweeter">
+          <textarea class="form-control" id="tweetText" placeholder="What's happening?" rows="3"></textarea>
+          <div class="pull-right btnGroup">
+            <p><strong class="{{charClass}}">{{charCount}}</strong></P>
+            {{#if currentUser}}
+              <button class="btn btn-info pull-right" type="submit" {{disableButton}}>Tweet</button>
+            {{else}}
+              <button class="btn btn-info pull-right" type="submit" disabled>Log In</button>
+            {{/if}}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>
+<template name="userManagement">
+  <div class="user-container">
+    <div class="panel panel-default userBox">
+      <div class="panel-body">
+        {{# if currentUser}}
+        <p>Hello <strong>@{{currentUser.username}}</strong>, welcome to Tweeter</p>
+        {{else}}
+        <h3>NewUser?</h3>
+        <div class="form-group">
+          <input class="form-control input-sm" id="signup-username" placeholder="Username" />
+          <input class="form-control input-sm" id="signup-fullname" placeholder="Full Name (Optional)" />
+          <input class="form-control input-sm" id="signup-password" placeholder="Password" type="password" />
+        </div>
+        <button type="button" class="btn btn-info fullbutton" id="signup">Sign UP</button>
+
+        <h3>Already have an account?</h3>
+        <div class="form-group">
+          <input class="form-control input-sm" id="login-username" placeholder="Username" />
+          <input class="form-control input-sm" id="login-password" placeholder="Password" type="password" />
+        </div>
+
+          <button type="button" class="btn btn-info fullbutton login" id="login">Log in</button>
+        {{/if}}
+      </div>
+      {{#if currentUser}}
+        <button type="button" class="btn btn-info fullbutton" id="logout">Log out</button>
+      {{/if}}
+    </div>
+  </div>
+</template>

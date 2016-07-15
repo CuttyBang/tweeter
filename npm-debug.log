@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/nathanmcelwain/.meteor/packages/meteor-tool/.1.3.4_4.143u0bq++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'lint' ]
+2 info using npm@3.10.5
+3 info using node@v0.10.46
+4 verbose run-script [ 'prelint', 'lint', 'postlint' ]
+5 info lifecycle twatter@~prelint: twatter@
+6 silly lifecycle twatter@~prelint: no script for prelint, continuing
+7 info lifecycle twatter@~lint: twatter@
+8 verbose lifecycle twatter@~lint: unsafe-perm in lifecycle true
+9 verbose lifecycle twatter@~lint: PATH: /Users/nathanmcelwain/.meteor/packages/meteor-tool/.1.3.4_4.143u0bq++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/bin/node-gyp-bin:/Users/nathanmcelwain/Sites/localhost/twatter/node_modules/.bin:/Users/nathanmcelwain/.meteor/packages/meteor-tool/.1.3.4_4.143u0bq++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin:/Users/nathanmcelwain/.meteor/packages/meteor-tool/.1.3.4_4.143u0bq++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin:/Users/nathanmcelwain/.meteor/packages/meteor-tool/.1.3.4_4.143u0bq++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/.bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+10 verbose lifecycle twatter@~lint: CWD: /Users/nathanmcelwain/Sites/localhost/twatter
+11 silly lifecycle twatter@~lint: Args: [ '-c', 'eslint .' ]
+12 silly lifecycle twatter@~lint: Returned: code: 8  signal: null
+13 info lifecycle twatter@~lint: Failed to exec lint script
+14 verbose stack Error: twatter@ lint: `eslint .`
+14 verbose stack Exit status 8
+14 verbose stack     at EventEmitter.<anonymous> (/Users/nathanmcelwain/.meteor/packages/meteor-tool/.1.3.4_4.143u0bq++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
+14 verbose stack     at EventEmitter.emit (events.js:98:17)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/nathanmcelwain/.meteor/packages/meteor-tool/.1.3.4_4.143u0bq++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at ChildProcess.emit (events.js:98:17)
+14 verbose stack     at maybeClose (child_process.js:766:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:833:5)
+15 verbose pkgid twatter@
+16 verbose cwd /Users/nathanmcelwain/Sites/localhost/twatter
+17 error Darwin 15.5.0
+18 error argv "node" "/Users/nathanmcelwain/.meteor/packages/meteor-tool/.1.3.4_4.143u0bq++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "run" "lint"
+19 error node v0.10.46
+20 error npm  v3.10.5
+21 error code ELIFECYCLE
+22 error twatter@ lint: `eslint .`
+22 error Exit status 8
+23 error Failed at the twatter@ lint script 'eslint .'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the twatter package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     eslint .
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs twatter
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls twatter
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
